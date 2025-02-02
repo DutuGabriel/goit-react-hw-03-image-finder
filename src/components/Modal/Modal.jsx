@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import styles from 'components/Modal/Modal.module.css';
 
 const Modal = ({ imageUrl, onClose }) => {
   useEffect(() => {
@@ -12,8 +11,8 @@ const Modal = ({ imageUrl, onClose }) => {
   }, [onClose]);
 
   return (
-    <div className={styles.overlay} onClick={onClose}>
-      <div className={styles.modal}>
+    <div className="Overlay" onClick={onClose}>
+      <div className="Modal">
         <img src={imageUrl} alt="Large view" />
       </div>
     </div>
